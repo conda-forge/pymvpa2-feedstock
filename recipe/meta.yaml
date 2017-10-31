@@ -19,7 +19,6 @@ build:
 requirements:
   build:
     - python
-    - setuptools
     - swig
     - toolchain
     - numpy 1.9.*  # [not (win and py36)]
