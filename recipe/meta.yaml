@@ -1,6 +1,6 @@
 {% set name = "pymvpa2" %}
-{% set version = "2.6.1" %}
-{% set sha256 = "206fa302fc6292831c50d6ffe9b1a95fc048380b0701c140eb7300dcd017052a" %}
+{% set version = "2.6.2" %}
+{% set sha256 = "e7a513400833c1d118f87f0ba5be2b550eae05b042165222ca43c100b39e76ae" %}
 
 package:
   name: {{ name|lower }}
