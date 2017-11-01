@@ -11,4 +11,5 @@ os.environ.update({
 
 import mvpa2
 
-mvpa2.test(verbosity=3, exit_=True)
+if __name__ == '__main__':
+    mvpa2.test(verbosity=3, exit_=True)
