@@ -45,7 +45,7 @@ test:
     - mvpa2
     - mvpa2.tests
   commands:
-    - MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_MATPLOTLIB_BACKEND=agg python -m nose -s -v mvpa2
+    - MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_MATPLOTLIB_BACKEND=agg python -m nose -s -v --exclude=test_plot_dataset_chunks mvpa2
 
 about:
   home: http://pymvpa.org
