@@ -47,7 +47,8 @@ test:
     - mvpa2
     - mvpa2.tests
   commands:
-    - MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_MATPLOTLIB_BACKEND=agg python -m nose -s -v --exclude=test_plot_dataset_chunks mvpa2
+    - conda inspect linkages -p $PREFIX mvpa2 # [not win]
+    - conda inspect objects -p $PREFIX mvpa2 # [osx]
 
 about:
   home: http://pymvpa.org
