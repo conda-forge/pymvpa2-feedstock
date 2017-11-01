@@ -47,8 +47,8 @@ test:
     - mvpa2
     - mvpa2.tests
   commands:
-    - conda inspect linkages -p $PREFIX mvpa2 # [not win]
-    - conda inspect objects -p $PREFIX mvpa2 # [osx]
+    - conda inspect linkages -p $PREFIX mvpa2  # [not win]
+    - conda inspect objects -p $PREFIX mvpa2  # [osx]
 
 about:
   home: http://pymvpa.org
