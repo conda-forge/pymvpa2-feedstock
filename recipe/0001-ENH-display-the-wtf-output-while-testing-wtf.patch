@@ -1,0 +1,24 @@
+From 063361c5904dd1d6f5ba9936af9a1859e8ca141f Mon Sep 17 00:00:00 2001
+From: Yaroslav Halchenko <debian@onerussian.com>
+Date: Wed, 1 Nov 2017 13:47:13 -0400
+Subject: [PATCH 1/4] ENH: display the wtf output while testing wtf
+
+---
+ mvpa2/tests/test_base.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/mvpa2/tests/test_base.py b/mvpa2/tests/test_base.py
+index dc582730..3bb836d7 100644
+--- a/mvpa2/tests/test_base.py
++++ b/mvpa2/tests/test_base.py
+@@ -19,6 +19,7 @@ def test_wtf(filename):
+     """Very basic testing of wtf()"""
+ 
+     sinfo = str(wtf())
++    print(sinfo)  # Display it so later we could actually use to troubleshoot
+     sinfo_excludes = str(wtf(exclude=['runtime']))
+     ok_(len(sinfo) > len(sinfo_excludes),
+         msg="Got not less info when excluded runtime."
+-- 
+2.14.1
+

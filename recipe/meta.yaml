@@ -12,6 +12,10 @@ source:
   sha256: {{ sha256 }}
   patches:
     - 0001-BF-TST-numpy-1.13.3-in-conda-bugfix-ceil-returns-flo.patch
+    - 0001-ENH-display-the-wtf-output-while-testing-wtf.patch
+    - 0002-BF-plot_dataset_chunks-do-not-invoke-ion-in-non-TkAg.patch
+    - 0003-BF-make-scatter-robust-to-empty-masks.patch
+    - 0004-Include-python-recursion-limit-into-output-of-wtf.patch
 
 build:
   number: 0
