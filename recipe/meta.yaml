@@ -16,6 +16,7 @@ source:
     - 0002-BF-plot_dataset_chunks-do-not-invoke-ion-in-non-TkAg.patch
     - 0003-BF-make-scatter-robust-to-empty-masks.patch
     - 0004-Include-python-recursion-limit-into-output-of-wtf.patch
+    - 0001-BF-do-not-use-NamedTemporaryFile-use-with_tempfile.patch
 
 build:
   number: 0
