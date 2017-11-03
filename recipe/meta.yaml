@@ -17,6 +17,9 @@ source:
     - 0003-BF-make-scatter-robust-to-empty-masks.patch
     - 0004-Include-python-recursion-limit-into-output-of-wtf.patch
     - 0001-BF-do-not-use-NamedTemporaryFile-use-with_tempfile.patch
+    - 0001-BF-workaround-skip-a-test-for-surf-on-windows-not-su.patch
+    - 0002-relax-comparison-on-windows-in-32bit-fails.patch
+    - 0003-BF-workaround-TST-on-windows-32-need-to-relax-compar.patch
 
 build:
   number: 0
