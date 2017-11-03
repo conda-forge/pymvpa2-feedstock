@@ -1,6 +1,6 @@
 {% set name = "pymvpa2" %}
-{% set version = "2.6.1" %}
-{% set sha256 = "206fa302fc6292831c50d6ffe9b1a95fc048380b0701c140eb7300dcd017052a" %}
+{% set version = "2.6.3" %}
+{% set sha256 = "b650b98ec21d92e53daffe1a09a28af3b20dfa0a337de5dde1396ce3478d066c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,12 @@ source:
 
 build:
   number: 0
-  skip: True  # [py>3]
-  script: python setup.py install --single-version-externally-managed --record record.txt
-  # TODO: entry_points -- well, we have scripts
+  skip: True  # [not py2k]
+  script: python setup.py install
 
 requirements:
   build:
     - python
-    - setuptools
     - swig
     - toolchain
     - numpy 1.9.*  # [not (win and py36)]
@@ -46,9 +44,6 @@ test:
   imports:
     - mvpa2
     - mvpa2.tests
-  commands:
-    - MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes MVPA_TESTS_LABILE=no MVPA_TESTS_LOWMEM=yes \
-      python -m nose -s -v mvpa2
 
 about:
   home: http://pymvpa.org
