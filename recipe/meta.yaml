@@ -20,6 +20,7 @@ source:
     - 0001-BF-workaround-skip-a-test-for-surf-on-windows-not-su.patch
     - 0002-relax-comparison-on-windows-in-32bit-fails.patch
     - 0003-BF-workaround-TST-on-windows-32-need-to-relax-compar.patch
+    - 0001-One-more-relaxation-for-windows.patch
 
 build:
   number: 0
