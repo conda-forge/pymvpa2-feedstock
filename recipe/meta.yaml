@@ -10,6 +10,9 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-ENH-make-scatter-robust-to-receiving-no-non-degenera.patch
+    - 0002-BF-also-return-early-if-something-happens-while-comp.patch
 
 build:
   number: 0
