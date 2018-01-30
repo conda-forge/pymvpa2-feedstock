@@ -1,6 +1,6 @@
 {% set name = "pymvpa2" %}
-{% set version = "2.6.3" %}
-{% set sha256 = "b650b98ec21d92e53daffe1a09a28af3b20dfa0a337de5dde1396ce3478d066c" %}
+{% set version = "2.6.4" %}
+{% set sha256 = "9399a63625196d84608c84b2e6c5857fa2fd621961a506846dd4461de49ed1e8" %}
 
 package:
   name: {{ name|lower }}
@@ -10,6 +10,9 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-ENH-make-scatter-robust-to-receiving-no-non-degenera.patch
+    - 0002-BF-also-return-early-if-something-happens-while-comp.patch
 
 build:
   number: 0
