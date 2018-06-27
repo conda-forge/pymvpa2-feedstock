@@ -1,0 +1,25 @@
+From f0e55136138a1c9369121f191313f1f79059bfb3 Mon Sep 17 00:00:00 2001
+From: Yaroslav Halchenko <debian@onerussian.com>
+Date: Wed, 27 Jun 2018 14:15:56 -0400
+Subject: [PATCH] BF: explicit import of h5py.highlevel
+
+see https://github.com/h5py/h5py/issues/1063
+---
+ mvpa2/base/hdf5.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/mvpa2/base/hdf5.py b/mvpa2/base/hdf5.py
+index 465e4d03..973ce5fc 100644
+--- a/mvpa2/base/hdf5.py
++++ b/mvpa2/base/hdf5.py
+@@ -37,6 +37,7 @@ __docformat__ = 'restructuredtext'
+ 
+ import numpy as np
+ import h5py
++import h5py.highlevel  # >= 2.8.0, https://github.com/h5py/h5py/issues/1063
+ 
+ import os
+ import os.path as osp
+-- 
+2.18.0
+

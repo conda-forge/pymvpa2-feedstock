@@ -1,6 +1,6 @@
 {% set name = "pymvpa2" %}
-{% set version = "2.6.4" %}
-{% set sha256 = "9399a63625196d84608c84b2e6c5857fa2fd621961a506846dd4461de49ed1e8" %}
+{% set version = "2.6.5" %}
+{% set sha256 = "f98b18e15d012aaa68c0ef6ccf420662df05657673843ab368e7f0adfdda0758" %}
 
 package:
   name: {{ name|lower }}
@@ -11,8 +11,11 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
-    - 0001-ENH-make-scatter-robust-to-receiving-no-non-degenera.patch
-    - 0002-BF-also-return-early-if-something-happens-while-comp.patch
+   - 0001-BF-Directive-moved-from-sphinx-to-docutils.patch
+   - 0001-BF-explicit-import-of-h5py.highlevel.patch
+   - 0002-BF-TEMP-workaround-do-not-add-Notes-for-sklearn-data.patch
+   - 0003-BF-compatibility-with-matplotlib-2.2.0-axisbg-faceco.patch
+   - 0004-BF-make-more-resilient-on-older-numpys-to-empty-mask.patch
 
 build:
   number: 0
