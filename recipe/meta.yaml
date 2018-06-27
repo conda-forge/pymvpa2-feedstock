@@ -10,6 +10,12 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+   - 0001-BF-Directive-moved-from-sphinx-to-docutils.patch
+   - 0001-BF-explicit-import-of-h5py.highlevel.patch
+   - 0002-BF-TEMP-workaround-do-not-add-Notes-for-sklearn-data.patch
+   - 0003-BF-compatibility-with-matplotlib-2.2.0-axisbg-faceco.patch
+   - 0004-BF-make-more-resilient-on-older-numpys-to-empty-mask.patch
 
 build:
   number: 0
