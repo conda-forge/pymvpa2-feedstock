@@ -18,25 +18,26 @@ source:
    - 0004-BF-make-more-resilient-on-older-numpys-to-empty-mask.patch
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not py2k]
   script: python setup.py install
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - python
+    - pip
     - swig
-    - toolchain
-    - numpy 1.9.*  # [not (win and py36)]
-    - numpy 1.11.*  # [win and py36]
+    - numpy
   run:
     - python
     - h5py
     - joblib
     - matplotlib
     - nibabel
-    - numpy >=1.9  # [not (win and py36)]
-    - numpy >=1.11  # [win and py36]
+    - {{ pin_compatible('numpy') }}
     - scikit-learn
     - scipy
     - statsmodels
