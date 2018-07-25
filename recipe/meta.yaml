@@ -28,17 +28,16 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
+    - pip
     - swig
-    - numpy        # [not (win and py36)]
-    - numpy         # [win and py36]
+    - numpy
   run:
     - python
     - h5py
     - joblib
     - matplotlib
     - nibabel
-    - {{ pin_compatible('numpy') }}   # [not (win and py36)]
-    - {{ pin_compatible('numpy') }}   # [win and py36]
+    - {{ pin_compatible('numpy') }}
     - scikit-learn
     - scipy
     - statsmodels
