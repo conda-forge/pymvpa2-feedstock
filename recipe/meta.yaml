@@ -18,7 +18,7 @@ source:
    - 0004-BF-make-more-resilient-on-older-numpys-to-empty-mask.patch
 
 build:
-  number: 1001
+  number: 1002
   skip: True  # [not py2k]
   script: python setup.py install
 
@@ -35,7 +35,7 @@ requirements:
     - python
     - h5py
     - joblib
-    - matplotlib
+    - matplotlib-base
     - nibabel
     - {{ pin_compatible('numpy') }}
     - scikit-learn
