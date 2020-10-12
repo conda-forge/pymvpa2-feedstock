@@ -5,7 +5,7 @@ Home: http://pymvpa.org
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python multivariate pattern analysis framework
 
@@ -23,9 +23,9 @@ is eminently suited for such datasets.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pymvpa2-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pymvpa2-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/pymvpa2-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pymvpa2-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pymvpa2-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pymvpa2-feedstock/branch/master)
+
+<table>
+</table>
 
 Current release info
 ====================
@@ -59,6 +59,8 @@ conda search pymvpa2 --channel conda-forge
 About conda-forge
 =================
 
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
 conda-forge GitHub organization. The conda-forge organization contains one repository
@@ -68,7 +70,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -113,3 +115,9 @@ In order to produce a uniquely identifiable distribution:
  * If the version of a package **is** being increased, please remember to return
    the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@yarikoptic](https://github.com/yarikoptic/)
+
