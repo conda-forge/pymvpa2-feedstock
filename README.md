@@ -5,9 +5,11 @@ Home: http://pymvpa.org
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pymvpa2-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python multivariate pattern analysis framework
+
+Development: https://github.com/PyMVPA/PyMVPA
 
 PyMVPA eases pattern classification analyses of large datasets, with an
 accent on neuroimaging. It provides high-level abstraction of typical
