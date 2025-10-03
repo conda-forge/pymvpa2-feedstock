@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
    - 0001-BF-Directive-moved-from-sphinx-to-docutils.patch
@@ -18,13 +18,14 @@ source:
    - 0004-BF-make-more-resilient-on-older-numpys-to-empty-mask.patch
 
 build:
-  number: 1001
+  number: 1002
   skip: True  # [not py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - python
